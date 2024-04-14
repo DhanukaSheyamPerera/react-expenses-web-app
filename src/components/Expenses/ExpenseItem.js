@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './ExpenseItem.css';
 
 import ExpenseDate from './ExpenseDate';
-import Card from '../UI/Card';
+import Card from '../uis/Card';
 
 function ExpenseItem(props){
     const [title, setTitle] = useState(props.title);
