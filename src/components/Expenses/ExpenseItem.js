@@ -12,7 +12,7 @@ function ExpenseItem(props){
         setTitle("Updated!");
         console.log("Button Clicked!");
     }
-
+    
     return (
         <Card className="expense-item">
 

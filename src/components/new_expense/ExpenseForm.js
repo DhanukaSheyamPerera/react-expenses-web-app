@@ -17,11 +17,14 @@ const ExpenseForm = (props) => {
     }
 
     const dateChangeHandler = (event) => {
+        console.log(event.target.value);
         setEnteredDate(event.target.value);
     }
 
     const submitHandler = (event) => {
         event.preventDefault();
+
+        // const [year, month, day] = enteredDate.split('-').map(Number);
 
         const expenseData = {
             title: enteredTitle,
@@ -31,7 +34,6 @@ const ExpenseForm = (props) => {
 
         props.onSaveExpenseData(expenseData);
 
-        console.log(expenseData);
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
