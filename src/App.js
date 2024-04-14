@@ -2,6 +2,7 @@
 import './App.css';
 
 import Expenses from './components/expenses/Expenses';
+import NewExpense from './components/new_expense/NewExpense';
 
 function App() {
   const expenses = [
@@ -49,7 +50,7 @@ function App() {
     // </div>
 
     <div>
-      <h2>Let's get started...</h2>
+      <NewExpense></NewExpense>
       <Expenses items={expenses}></Expenses>
     </div>
   );
