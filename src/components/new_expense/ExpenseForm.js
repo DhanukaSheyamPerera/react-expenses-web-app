@@ -24,8 +24,6 @@ const ExpenseForm = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
 
-        // const [year, month, day] = enteredDate.split('-').map(Number);
-
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
